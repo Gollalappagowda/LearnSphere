@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="ISO-8859-1">
+    <title>Add Course</title>
+    <link rel="stylesheet" th:href="@{/css/common.css}">
+</head>
+<body>
+
+<header class="container">
+    <div class="page-header">
+      <div class="logo">
+        <a href="index">LearnSphere</a>
+      </div>
+      
+      <ul>
+        <li><a href="trainerHome" class="active" >Home</a></li>
+        <li><a href="logout">Logout</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <div class="container1"> 
+    <div class="sidebar">
+      <h3>Trainer Home</h3>
+      <a href="trainerHome">Home</a>
+      <a href="createCourse" class="active">➕ Add Course</a>
+      <a href="addLesson">📝 Add Lesson</a>
+      <a href="viewAllCourses">👀 View All Courses</a>
+      <a href="#">👀 View Resources</a>
+    </div>
+<div class="form">
+ <div class="container2">
+  
+    <form action="addCourse" method="post">
+        <h1> Create Course </h1> 
+    
+        <label>Course ID :</label>
+        <input type="text" name="courseId"><br><br>
+
+        <label>Course Name :</label>
+        <input type="text" name="courseName"><br><br>
+        
+        <label>Course Price :</label>
+        <input type="text" name="coursePrice"><br><br>
+     
+        <button>Create</button>
+        
+    </form>
+</div>
+</div>
+</div>
+
+</body>
+</html>
